@@ -1,4 +1,7 @@
 import { useGetArtworksQuery } from "../services/artInstituteApi";
+import Spinner from "./Spinner";
+import ErrorPage from "./ErrorPage"
+import NodataFound from "./NodataFound"
 
 function Artworks() {
   const {
@@ -12,15 +15,15 @@ function Artworks() {
  console.log(data)
 
   if (isLoading || isFetching) {
-    return <div>loading...</div>;
+    return <div><Spinner/></div>;
   }
 
   if (isError) {
     console.log({ error });
-    return <div>{error.status}</div>;
+    return <div><ErrorPage/></div>;
   }
   if (!data || !data.artworks) {
-    return <div>No artworks found</div>
+    return <div><NodataFound/></div>
   }
   return (
     <div>
