@@ -1,7 +1,7 @@
 import './App.css';
 import Home from './components/Home';
 import { Routes, Route } from "react-router-dom";
-import ArtWorks from './Pages/Artworks';
+import Allcharacters from './Pages/Allcharacters';
 import Exhibitions from './Pages/Exhibitions';
 import ErrorPage from './Pages/ErrorPage';
 import Spinner from './Pages/Spinner';
@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/displayPage' element={<ArtWorks />} />
+        <Route path='/displayPage' element={<Allcharacters />} />
         <Route path='/exhibitions' element={<Exhibitions/>} />
         <Route path="/errorPage" element={<ErrorPage/>} />
         <Route path='/spinner' element={<Spinner/>} />
