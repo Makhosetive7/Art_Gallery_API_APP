@@ -2,6 +2,7 @@ import './App.css';
 import Home from './components/Home';
 import { Routes, Route } from "react-router-dom";
 import Allcharacters from './Pages/Allcharacters';
+import CharacterDetails from './Pages/CharacterDetails';
 import Exhibitions from './Pages/Exhibitions';
 import ErrorPage from './Pages/ErrorPage';
 import Spinner from './Pages/Spinner';
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/displayPage' element={<Allcharacters />} />
+        <Route path='/characterDetail/:id' element ={<CharacterDetails/>}/>
         <Route path='/exhibitions' element={<Exhibitions/>} />
         <Route path="/errorPage" element={<ErrorPage/>} />
         <Route path='/spinner' element={<Spinner/>} />

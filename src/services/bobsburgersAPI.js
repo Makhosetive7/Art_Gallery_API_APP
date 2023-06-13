@@ -5,13 +5,16 @@ export const bobsburgersApi = createApi({
   baseQuery: fetchBaseQuery({ baseUrl: 'https://bobsburgers-api.herokuapp.com' }),
   endpoints: (builder) => ({
     getAllcharacters: builder.query({
-      query: () => '/characters/',
+      query: (page = 10) => `/characters?page=${page}`,
+    }),
+    getCharacterDetails: builder.query({
+      query: (id) =>  `/characters/${id}`
     }),
     getEpisodes: builder.query({
-      query: () => '/episodes/',
+      query: () => '/episodes',
     }),
   }),
 })
 
-export const { useGetAllcharactersQuery, useGetEpisodesQuery } = bobsburgersApi
+export const { useGetAllcharactersQuery, useGetEpisodesQuery, useGetCharacterDetailsQuery } = bobsburgersApi
 

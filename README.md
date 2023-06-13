@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Name: **Makhosetive Sibanda**
+## Project Title: **BobBurgers API** 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Project Description 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Key Features
 
-In the project directory, you can run:
 
-### `npm start`
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Key lesson Learnt From Building this Project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+During the development of this project, the following concepts and technologies were utilized:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# Getting started with Space News Launch
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To install and run the Space News Launch Web App locally, follow these steps:
 
-### `npm run build`
++ Clone the repository: git clone <your-repo-url>
++ Navigate to the project directory: cd <your-project-folder>
++ Install dependencies: npm install
++ Start the development server: npm start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#Todo
+- [] Displaying a list of all the characters
+- []Displaying details about each character such as their name, age, occupation, etc.
+- []Allowing users to search for characters by name or occupation
+- []Allowing users to filter characters by various criteria such as age, occupation, etc.
+- []Displaying a list of all the episodes
+- []Displaying details about each episode such as its title, air date, plot summary, etc.
+- []Allowing users to search for episodes by title or air date
+- []Allowing users to filter episodes by various criteria such as season number, writer, etc.

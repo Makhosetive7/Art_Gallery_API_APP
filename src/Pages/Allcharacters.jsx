@@ -1,17 +1,23 @@
 import { useGetAllcharactersQuery } from "../services/bobsburgersAPI";
+import { useNavigate } from "react-router-dom";
 import Spinner from "./Spinner";
 import ErrorPage from "./ErrorPage";
 import NodataFound from "./NodataFound";
 import "../styles/Allcharecters.css";
+import { useState } from "react";
 
 function Allcharacters() {
+  const navigate = useNavigate()
+
+  const [page, setPage] = useState(10)
+
   const {
     data: bobsburgers = [],
     isLoading,
     isFetching,
     isError,
     error,
-  } = useGetAllcharactersQuery();
+  } = useGetAllcharactersQuery(page);
 
   if (isLoading || isFetching) {
     return (
@@ -41,7 +47,7 @@ function Allcharacters() {
   return (
     <div className="Allcharacteres-container">
       {bobsburgers.map((bobsburger) => (
-        <div key={bobsburger.id} className="card">
+        <div key={bobsburger.id} className="card" onClick={() => navigate(`/characterDetail/${bobsburger.id}`)}>
           <img src={bobsburger.image} alt="/" />
           <div className="details-container">
             <h1>{bobsburger.name}</h1>
@@ -52,6 +58,12 @@ function Allcharacters() {
           <button>save character</button>
         </div>
       ))}
+      <button onClick={() => setPage(page - 1)} isLoading={isFetching}>
+        Previous
+      </button>
+      <button onClick={() => setPage(page + 1)} isLoading={isFetching}>
+        Next
+      </button>
     </div>
   );
 }
