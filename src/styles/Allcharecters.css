@@ -1,4 +1,10 @@
-.Allcharacteres-container{
+.display-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.Allcharacters-container{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
     place-items: centre;

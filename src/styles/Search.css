@@ -1,0 +1,18 @@
+input {
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 1rem 4rem;
+    border: 2px solid red;
+    margin-bottom: 1.5rem;
+    font-size: 14px;
+    font-family: "Aldrich", sans-serif;
+  }
+  input:active {
+    transition: 0.3s all;
+    transform: translateY(3px);
+    opacity: 0.8;
+  }
+  input:focus {
+      color: black;
+      border: 2px solid yellow;
+  }

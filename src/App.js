@@ -7,6 +7,7 @@ import Exhibitions from './Pages/Exhibitions';
 import ErrorPage from './Pages/ErrorPage';
 import Spinner from './Pages/Spinner';
 import NodataFound from './Pages/NodataFound';
+import SearchedCharacter from './Pages/SearchedCharacter';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/displayPage' element={<Allcharacters />} />
         <Route path='/characterDetail/:id' element ={<CharacterDetails/>}/>
+        <Route path='/searchedPage/:name' element={<SearchedCharacter/>}/>
         <Route path='/exhibitions' element={<Exhibitions/>} />
         <Route path="/errorPage" element={<ErrorPage/>} />
         <Route path='/spinner' element={<Spinner/>} />

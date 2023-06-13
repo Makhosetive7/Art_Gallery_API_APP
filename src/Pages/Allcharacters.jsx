@@ -1,5 +1,6 @@
 import { useGetAllcharactersQuery } from "../services/bobsburgersAPI";
 import { useNavigate } from "react-router-dom";
+import Search from "../components/Search";
 import Spinner from "./Spinner";
 import ErrorPage from "./ErrorPage";
 import NodataFound from "./NodataFound";
@@ -45,7 +46,9 @@ function Allcharacters() {
   }
 
   return (
-    <div className="Allcharacteres-container">
+    <div className="display-container">
+      <Search/>
+      <div className="Allcharacters-container">
       {bobsburgers.map((bobsburger) => (
         <div key={bobsburger.id} className="card" onClick={() => navigate(`/characterDetail/${bobsburger.id}`)}>
           <img src={bobsburger.image} alt="/" />
@@ -58,6 +61,7 @@ function Allcharacters() {
           <button>save character</button>
         </div>
       ))}
+      </div>
       <button onClick={() => setPage(page - 1)} isLoading={isFetching}>
         Previous
       </button>
