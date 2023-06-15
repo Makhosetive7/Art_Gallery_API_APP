@@ -1,3 +1,12 @@
+.search-container{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1rem;
+  margin-right: 3rem;
+}
+.logo h1{
+  font-size: 1rem;
+}
 input {
     box-sizing: border-box;
     border-radius: 4px;

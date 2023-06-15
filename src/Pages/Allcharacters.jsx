@@ -6,6 +6,7 @@ import ErrorPage from "./ErrorPage";
 import NodataFound from "./NodataFound";
 import "../styles/Allcharecters.css";
 import { useState } from "react";
+import Navigation from "../components/Navigation";
 
 function Allcharacters() {
   const navigate = useNavigate()
@@ -47,7 +48,7 @@ function Allcharacters() {
 
   return (
     <div className="display-container">
-      <Search/>
+      <Navigation/>
       <div className="Allcharacters-container">
       {bobsburgers.map((bobsburger) => (
         <div key={bobsburger.id} className="card" onClick={() => navigate(`/characterDetail/${bobsburger.id}`)}>
