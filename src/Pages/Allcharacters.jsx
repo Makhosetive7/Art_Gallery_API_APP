@@ -1,6 +1,5 @@
 import { useGetAllcharactersQuery } from "../services/bobsburgersAPI";
 import { useNavigate } from "react-router-dom";
-import Search from "../components/Search";
 import Spinner from "./Spinner";
 import ErrorPage from "./ErrorPage";
 import NodataFound from "./NodataFound";

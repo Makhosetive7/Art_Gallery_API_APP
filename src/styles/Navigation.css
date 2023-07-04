@@ -1,0 +1,14 @@
+.Container{
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid red;
+}
+.Links ul{
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+.Links ul li{
+  margin-left: 1.5rem;
+
+}

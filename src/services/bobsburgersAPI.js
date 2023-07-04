@@ -21,6 +21,9 @@ export const bobsburgersApi = createApi({
     getEpisodes: builder.query({
       query: () => "/episodes",
     }),
+    getBurgerOfTheDay: builder.query({
+      query: () => `/burgerOfTheDay`
+    })
   }),
 });
 
@@ -29,5 +32,6 @@ export const {
   useGetEpisodesQuery,
   useGetCharacterDetailsQuery,
   useGetFilterByNameQuery,
+  useGetBurgerOfTheDayQuery,
   useGetFilterbyOccupationQuery,
 } = bobsburgersApi;
